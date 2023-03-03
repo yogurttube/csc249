@@ -8,6 +8,7 @@ used by main.cpp
 
 #include <iostream>
 
+/*
 class Node {
 public:
    int data;
@@ -18,7 +19,7 @@ public:
       next = nullptr;
    }
 };
-
+*/
 class LinkedList {
 private:
    Node* head;
@@ -62,6 +63,7 @@ public:
    }
    
    void PrintList(std::ostream& printStream, const std::string& separator = ", ") {
+      // node here is the "probe" variable
       Node* node = head;
       if (node) {
           // Head node is not preceded by separator
